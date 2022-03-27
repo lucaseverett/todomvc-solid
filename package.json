@@ -1,0 +1,19 @@
+{
+  "name": "todomvc-solid",
+  "dependencies": {
+    "solid-js": "^1.4.8",
+    "todomvc-app-css": "^2.4.2"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html --open --no-cache",
+    "prebuild": "rimraf dist",
+    "build": "parcel build ./src/index.html --public-url ./ --no-cache",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "devDependencies": {
+    "babel-preset-solid": "^1.4.8",
+    "parcel": "^2.6.2",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2"
+  }
+}
